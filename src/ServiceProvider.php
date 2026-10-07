@@ -24,6 +24,13 @@ abstract class ServiceProvider extends IlluminateServiceProvider
 	protected $registered = false;
 
 	/**
+	 * Configuration namespace assigned during provider registration.
+	 *
+	 * @var string
+	 */
+	protected $packageNamespace;
+
+	/**
 	 * Get the ServiceProvider root directory
 	 *
 	 * @return string
